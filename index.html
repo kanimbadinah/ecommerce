@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneaker Avenue - Shop Athletic Shoes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Logo -->
+      <div class="logo">
+        <a href="#home"><img src="./images/ff.jpeg" alt="" /></a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons (Search, Cart) -->
+      <div class="nav-icons">
+        <div class="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+      </div>
+
+      <!-- Burger Menu Icon for Mobile -->
+      <div class="burger-menu" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-overlay">
+        <h1>Unleash Your Style with Every Step</h1>
+        <p>
+          Discover the latest in sneakers and athletic footwear for all
+          adventures.
+        </p>
+        <button class="cta-button primary">Shop Now</button>
+        <button class="cta-button secondary">Explore Collections</button>
+      </div>
+    </section>
+
+    <section class="categories">
+      <h2>Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card running">
+          <div class="overlay">
+            <i class="fas fa-running"></i>
+            <p>Running Shoes</p>
+          </div>
+        </div>
+        <div class="category-card sneakers">
+          <div class="overlay">
+            <i class="fas fa-shoe-prints"></i>
+            <p>Casual Sneakers</p>
+          </div>
+        </div>
+        <!-- Other categories here... -->
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="./images/blue_3_1400x.webp" alt="Electric Blue Runner" />
+          <div class="product-info">
+            <h3>Electric Blue Runner</h3>
+            <p>$120.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./images/blue_3_1400x.webp" alt="Electric Blue Runner" />
+          <div class="product-info">
+            <h3>Electric Blue Runner</h3>
+            <p>$120.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./images/blue_3_1400x.webp" alt="Electric Blue Runner" />
+          <div class="product-info">
+            <h3>Electric Blue Runner</h3>
+            <p>$120.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./images/blue_3_1400x.webp" alt="Electric Blue Runner" />
+          <div class="product-info">
+            <h3>Electric Blue Runner</h3>
+            <p>$120.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="./images/blue_3_1400x.webp" alt="Electric Blue Runner" />
+          <div class="product-info">
+            <h3>Electric Blue Runner</h3>
+            <p>$120.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+      <h2>Why Choose Us?</h2>
+      <div class="features-container">
+        <div class="feature">
+          <h3>Top Quality</h3>
+          <p>Premium materials designed to last.</p>
+        </div>
+        <div class="feature">
+          <h3>Ultimate Comfort</h3>
+          <p>Engineered for all-day wear.</p>
+        </div>
+        <div class="feature">
+          <h3>Modern Design</h3>
+          <p>Fashion-forward styles that make a statement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-reviews">
+      <h2>What Our Customers Say</h2>
+      <div class="review-container">
+        <div class="review">
+          <p>“Amazing comfort and style. I’ve never worn a better sneaker!”</p>
+          <span>- Alex, Runner</span>
+        </div>
+        <div class="review">
+          <p>“Stylish and durable. Perfect for everyday wear.”</p>
+          <span>- Jamie, Sneaker Enthusiast</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section company-info">
+          <div class="logo">SA</div>
+          <p>
+            Explore the latest in sneakers and athletic shoes, crafted for
+            performance and style.
+          </p>
+          <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+
+        <div class="footer-section quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section support">
+          <h3>Customer Support</h3>
+          <ul>
+            <li><a href="#return-policy">Return Policy</a></li>
+            <li><a href="#shipping-info">Shipping Info</a></li>
+            <li><a href="#customer-service">Customer Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Stay Updated</h3>
+          <p>
+            Sign up for our newsletter to receive updates on new releases and
+            exclusive offers.
+          </p>
+          <form>
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Sneaker Avenue. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
