@@ -25,6 +25,11 @@ header {
   font-weight: bold;
   color: #00f;
   text-decoration: none;
+  width: 50px;
+}
+
+.logo a img {
+  width: 100%;
 }
 
 /* Navigation Menu */
